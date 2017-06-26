@@ -135,3 +135,5 @@ if ls --color -d . >/dev/null 2>&1; then  # GNU ls
     alias ll='ls -l'
     alias l='ls -l -a'
 fi
+
+alias docker_clean='docker rmi $(docker images -f dangling=true -q)'
