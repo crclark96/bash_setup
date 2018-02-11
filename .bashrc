@@ -137,3 +137,4 @@ if ls --color -d . >/dev/null 2>&1; then  # GNU ls
 fi
 
 alias docker_clean='docker rmi $(docker images -f dangling=true -q)'
+source .gi
