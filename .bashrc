@@ -117,7 +117,7 @@ if ! shopt -oq posix; then
 fi
 
 #Git prompt stuff
-source ~/.git-prompt.sh
+source ~/bash_setup/.git-prompt.sh
 export GIT_PS1_SHOWCOLORHINTS=true
 export GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWSTASHSTATE=true
@@ -137,4 +137,4 @@ if ls --color -d . >/dev/null 2>&1; then  # GNU ls
 fi
 
 alias docker_clean='docker rmi $(docker images -f dangling=true -q)'
-source .gi
+source ~/bash_setup/.gi
